@@ -11,39 +11,30 @@
 
 	BackToTop.prototype = {
 	default:
-		{
-			buttonShowanimation: 'fade',
-			// animation type fade/show/slide
-			buttonShowanimationTime: 'medium',
-			// can be fast/slow/medium or any number in milli seconds
-			scrollBottomOffset: 100,
-			// display the scroll to top button when user scroll this many pixels
-			text: "Back to top &uarr;",
-			// the text inside the back to top!!
-			backTotopLink: $("<a></a>", {
-				"class": "back-to-top",
-				"id": "back-top",
-				"href": "javascript:void(null)"
-			}),
-			scrollTopOffset: 0,
-			// scroll to top until this many px from top
-			cssClass: "",
-			// theme your back to top button
-			scrollTime: "fast",
-			// can be fast/slow/medium or any number in milli seconds
-			isWindow: false,
-			focusOuthide: true,
-			focusOuthideHideTime: 1000,
-			focusOuthideShowTime: 'medium',
-			buttonAlignTo: "left",
-			//left / right
-			buttonPos: {
-				top: "",
-				left: "",
-				right: 10,
-				bottom: 10,
-			}
-		}, init: function() {
+  {
+    buttonShowanimation: 'fade', // animation type fade/show/slide
+    buttonShowanimationTime: 'medium', // can be fast/slow/medium or any number in milli seconds
+    scrollBottomOffset: 100, // display the scroll to top button when user scroll this many pixels
+    text: "Back to top &uarr;", // the text inside the back to top!!
+    backTotopLink: $("<a></a>", {
+      "class": "back-to-top",
+      "id": "back-top",
+      "href": "javascript:void(null)"
+    }), // a dom object that acts a button
+    scrollTopOffset: 0, // scroll to top until this many px from top
+    cssClass: "", // theme your back to top button
+    scrollTime: "fast", // can be fast/slow/medium or any number in milli seconds
+    isWindow: false, // make it true if you want for window
+    focusOuthide: true, //hides the button when mouseout of the element (works only if isWindow: false)
+    focusOuthideHideTime: 1000,
+    focusOuthideShowTime: 'medium',
+    buttonPos: {
+      top: "",
+      left: "",
+      right: 10,
+      bottom: 10,
+    } // be intelleget mark only two
+  }, init: function() {
 			this.config = $.extend({}, this.
 		default, this.options);
 			var thiz = this;

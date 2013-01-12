@@ -7,27 +7,43 @@
   <meta name="author" content="author of the site">
   <title>welcome to backTotop</title>
   <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="../css/foundation.min.css">
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="assets/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/prettify.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="assets/font-awesome-ie7.min.css">
+<![endif]-->
+
   <link rel="stylesheet" href="../css/jquery.backTotop.css"></head>
-  <link rel="stylesheet" href="assets/prettify.css"></head>
 <body onload="prettyPrint()">
   <div class="row container">
     <div class="row header">
       <div class="six columns">
-        <h2 class="logo"><a href="index.html">backTotop!</a></h2>
+        <h2 class="logo"><a href="index.html">
+          <i class="icon-arrow-up icon-1x"></i>
+          backTotop!</a></h2>
         <p>A jquery plugin that adds scroll to top button</p>
       </div>
       <div class="six columns">
         <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#" class="selected">How to use</a></li>
-          <li><a href="download.html">Download</a></li>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="how-to-use.html" class="selected">How to use</a></li>
+          <li><a href="examples.html">Examples</a></li>
         </ul>
         <div class="tools">
-          <a class="github" target="_blank" href="https://github.com/websiddu/backTotop">Fork on git hub</a>
-          <a class="tweet" target="_blank" href="http://twitter.com/websiddu">@websiddu</a>
+          <a target="_blank" href="https://github.com/websiddu/backTotop" class="radius button">
+            <i class="icon-download icon-2x"></i>
+            Download
+          </a>
+          <a target="_blank" href="https://github.com/websiddu/backTotop" class="radius button">
+            <i class="icon-github icon-2x"></i>
+            Fork it
+          </a>
+          <span class="seperator"></span>
+          <a href="http://twitter.com/websiddu">
+          <i class="icon-twitter icon-1x"></i>@websiddu
+        </a>
         </div>
       </div>
       <hr />
@@ -45,16 +61,43 @@
 <h4 class="subheading"><span> 2. </span>Start the plugin</h4>
 <p>After successful pluging in, we need to init the plugin as below </p>
 <pre class="prettyprint">
-&lt;script>
-  (function(){
-    $("body").backTotop({
-     isWindow: true // If you want btt for window
+  &lt;script>
+    (function(){
+      $("body").backTotop({
+       isWindow: true // If you want btt for window
+      });
     });
-  });
-&lt;/script>
+  &lt;/script>
 </pre>
 
-
+<h4 class="subheading"><span> 3. </span> Options that you can pass</h4>
+<p> Here are the setting that you can pass to the plugin, these are the default settings. </p>
+<pre class="prettyprint">
+  {
+    buttonShowanimation: 'fade', // animation type fade/show/slide
+    buttonShowanimationTime: 'medium', // can be fast/slow/medium or any number in milli seconds
+    scrollBottomOffset: 100, // display the scroll to top button when user scroll this many pixels
+    text: "Back to top &uarr;", // the text inside the back to top!!
+    backTotopLink: $("&lt;a>&lt;/a>", {
+      "class": "back-to-top",
+      "id": "back-top",
+      "href": "javascript:void(null)"
+    }), // a dom object that acts a button
+    scrollTopOffset: 0, // scroll to top until this many px from top
+    cssClass: "", // theme your back to top button
+    scrollTime: "fast", // can be fast / slow / medium or any number in Milli seconds
+    isWindow: false, // make it true if you want for window
+    focusOuthide: true, //hides the button when mouse-out of the element (works only if isWindow: false)
+    focusOuthideHideTime: 1000, // slow, fast or medium or any number of Milli seconds
+    focusOuthideShowTime: 'medium', // slow, fast or medium or any number of Milli seconds
+    buttonPos: {
+      top: "",
+      left: "",
+      right: 10,
+      bottom: 10,
+    } // be intelligent mark only two
+  }
+</pre>
       </div>
     </div>
   </div>
@@ -62,4 +105,11 @@
   <script src="../js/jquery.min.js"></script>
   <script src="../js/jquery.backTotop.js"></script>
   <script src="assets/prettify.js"></script>
+  <script type="text/javascript">
+  (function(){
+    $("body").backTotop({
+      isWindow: true
+    });
+  })();
+  </script>
 </html>

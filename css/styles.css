@@ -22,61 +22,43 @@ a:focus{
 }
 
 h4, h3{
-	font-weight: normal;
+    font-weight: normal;
 }
 p{
-	font-size: 20px;
+    font-size: 20px;
 }
 .menu{
-	list-style-type: none;
+    list-style-type: none;
 }
 .menu li{
-	display: inline-block;
+    display: inline-block;
 }
 .menu li a{
-	font-size: 20px;
-	display: inline-block;
-	padding: 5px 9px;
-	transition: all 0.3s;
-	-webkit-transition: all 0.3s;
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px 9px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
 }
 
 .menu li a.selected{
-	border-top: solid 2px #2BA6CB;
+    border-top: solid 2px #2BA6CB;
 }
 .menu li a:hover{
-	border-top: solid 2px #2BA6CB;
-}
-.github:before, .tweet:before{
-    border: 1px dashed #098298;
-    content: "";
-    display: block;
-    height: 90%;
-    left: 2px;
-    position: absolute;
-    top: 2px;
-    width: 97%;
-}
-.github, .tweet{
-	display: inline-block;
-	padding: 10px 20px;
-	background: #2BA6CB;
-	color: #fff;
-	position: relative;
-	border-radius: 4px;
-	font-size: 16px;
-	transition: all 0.3s;
-}
-.github:hover, .tweet:hover,.github:visited, .tweet:visited{
-	text-decoration: none;
-	color: #fff;
-	box-shadow: 0 0 5px #2BA6CB;
+    border-top: solid 2px #2BA6CB;
 }
 
-.tweet{
- margin-left: 20px;
+.tools .button{
+    padding: 5px 10px;
+    font-family: Ubuntu, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 5px;
+    display: inline-block;
 }
-
+.tools .button i{
+    vertical-align: middle;
+}
 .main{
 	padding: 0 50px 50px 50px;
 }

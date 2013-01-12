@@ -95,11 +95,14 @@
     color: #060; } }
 /* Style */
 pre.prettyprint {
-  background: white;
-  font-family: Menlo, Monaco, Consolas, monospace;
-  font-size: 12px;
+  background: #fbfbfb;
+  box-shadow: 0 0 3px #ccc;
+  font-family: Menlo, "Ubuntu Mono", Monaco, Consolas, monospace;
+  font-size: 16px;
   line-height: 1.5;
   border: 1px solid #ccc;
+  overflow-y: hidden;
+  overflow-x: auto;
   padding: 10px; }
 
 /* Specify class=linenums on a pre to get line numbering */
