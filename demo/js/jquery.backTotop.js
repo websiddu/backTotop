@@ -9,7 +9,7 @@
 		}
 
 	BackToTop.prototype = {
-	default:
+	defaults:
 		{
 			buttonShowanimation: 'fade', // animation type fade/show/slide
 			buttonShowanimationTime: 'medium',// can be fast/slow/medium or any number in milli seconds
@@ -32,11 +32,11 @@
 				top: "",
 				left: "",
 				right: 10,
-				bottom: 10,
+				bottom: 10
 			}
 		},
 	init: function() {
-			this.config = $.extend({}, this.default, this.options);
+			this.config = $.extend({}, this.defaults, this.options);
 			var thiz = this;
 			var cssOpts = {
 
@@ -62,7 +62,7 @@
 							right: this.config.buttonPos.right + "px",
 						}
 			}
-		 	else{
+			else{
 			var boxMargin = parseInt(this.$elem.css("marginLeft").replace("px", "")),
 					boxPadding = parseInt(this.$elem.css("paddingLeft").replace("px", ""));
 				cssOpts = {
@@ -123,18 +123,18 @@
 			 if(this.config.buttonShowanimation === "fade"){
 				this.config.backTotopLink.fadeIn(animTime);
 			 }else if(this.config.buttonShowanimation === "show" ){
-			 	this.config.backTotopLink.show(animTime);
+				this.config.backTotopLink.show(animTime);
 			 }else if(this.config.buttonShowanimation === "slide" ){
-			 	this.config.backTotopLink.slideDown(animTime);
+				this.config.backTotopLink.slideDown(animTime);
 			 }
 		},
 		hideBackTotopButton: function(animTime){
 			if(this.config.buttonShowanimation === "fade"){
 				this.config.backTotopLink.stop().fadeOut(animTime);
 			 }else if(this.config.buttonShowanimation === "show" ){
-			 	this.config.backTotopLink.hide(animTime);
+				this.config.backTotopLink.hide(animTime);
 			 }else if(this.config.buttonShowanimation === "slide" ){
-			 	this.config.backTotopLink.stop(),slideUp(animTime);
+				this.config.backTotopLink.stop(),slideUp(animTime);
 			 }
 		},
 	returnTop:function(){
