@@ -9,7 +9,7 @@
 		}
 
 	BackToTop.prototype = {
-	default:
+	defaults:
 		{
 			buttonShowanimation: 'fade', // animation type fade/show/slide
 			buttonShowanimationTime: 'medium',// can be fast/slow/medium or any number in milli seconds
@@ -36,7 +36,7 @@
 			}
 		},
 	init: function() {
-			this.config = $.extend({}, this.default, this.options);
+			this.config = $.extend({}, this.defaults, this.options);
 			var thiz = this;
 			var cssOpts = {
 
