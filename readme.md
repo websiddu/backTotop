@@ -19,7 +19,7 @@ After successful pluging in, we need to init the plugin as below
 	  <script>
 	    (function(){
 	      $("body").backTotop({
-	       isWindow: true // If you want btt for window
+	       isWindow: true // If you want backTotop for window
 	      });
 	    });
 	  </script>
