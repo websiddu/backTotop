@@ -1,0 +1,60 @@
+.back-to-top {
+  position: relative;
+  font-size: 13px;
+  display: inline-block;
+  z-index: 999;
+  padding: 10px 20px;
+  color: #888;
+}
+.back-to-top:hover,.back-to-top:focus{
+  color: #000;
+}
+
+
+
+.pink{
+   background: #DA4882;
+   box-shadow: 0 0 10px #8E004B;
+   border: 0;
+   color: #fff;
+}
+
+.blue{
+  font-size: 16px;
+  display: inline-block;
+  border: solid 1px #ddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #2D84B3;
+
+  padding: 10px 20px;
+  background: #2BA6CB;
+  color: #fff;
+}
+
+
+/* Web designers wall */
+
+.web-designer-wall{
+  font-family: Ubuntu, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+.web-designer-wall i{
+  vertical-align: middle;
+}
+.web-designer-wall:hover{
+  color: #333;
+}
+
+/* flipkart */
+.flipkart{
+  background: #efefef;
+  border-radius: 10px 0 0 10px;
+  border:solid 1px #d2d2d2;
+}
+.flipkart:hover{
+  color: #333;
+}
