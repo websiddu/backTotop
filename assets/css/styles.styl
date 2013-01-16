@@ -1,15 +1,21 @@
+@import '_settings';
+
 body {
     background: url("../img/noise.png") repeat scroll 0 0 #D2EAFF;
     color: #333333;
-    font-family:'Bad Script', Ubuntu, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    font-size: 19px;
+    font-family: baseFont;
+    font-size: baseFontSize;
     font-weight: 300;
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
+
 a:focus{
 	outline: 0;
 }
+
+
 .header{
 	padding: 20px;
 }
@@ -18,15 +24,18 @@ a:focus{
 	background: #fff;
 }
 .logo, h3, h4{
-    font-family: 'Bad Script', Ubuntu, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-family: headingFont
 }
 
 h4, h3{
     font-weight: normal;
 }
+
 p{
-    font-size: 20px;
+    font-size: paragraphFontSize;
 }
+
+/* Menu styles */
 .menu{
     list-style-type: none;
 }
@@ -41,17 +50,18 @@ p{
     -webkit-transition: all 0.3s;
 }
 
-.menu li a.selected{
+.menu li a.current{
     border-top: solid 2px #2BA6CB;
 }
 .menu li a:hover{
     border-top: solid 2px #2BA6CB;
 }
 
+/* Tool bar styles */
 .tools .button{
     padding: 5px 10px;
-    font-family: Ubuntu, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    font-size: 12px;
+    font-family: buttonFont;
+    font-size: buttonFontSize;
     font-weight: normal;
     margin-right: 5px;
     display: inline-block;
@@ -59,11 +69,15 @@ p{
 .tools .button i{
     vertical-align: middle;
 }
+
+
 .main{
 	padding: 0 50px 50px 50px;
 }
 
-.cont{
+
+/* Pink content box styles */
+.pink-cont{
     background:url("../img/noise.png") repeat scroll 0 0 #FFA2C0;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 20px #D6619B;
@@ -77,7 +91,7 @@ p{
     text-align: center;
     text-shadow: 1px 1px 1px #33455B;
 }
-.cont p{
+.pink-cont p{
 	font-size: 25px;
 }
 
@@ -121,7 +135,6 @@ vertical-align: middle;
     background: #fff;
     box-shadow: 0 0 5px #ccc;
 }
-
 .examples li a span{
     position: absolute;
     text-align: center;

@@ -1,0 +1,22 @@
+title = "Examples"
+.row.container
+  include _header
+  .row.main
+    .twelve.columns
+      ul.examples.six.columns
+        li
+          a(href='examples/web-designers-wall.html')
+            span Web designers wall
+            img(src='/img/examples/wdw.png', alt='Web designers wall')
+      ul.examples.six.columns
+        li
+          a(href='examples/flipkart.html')
+            span Flipkart
+            img(src='/img/examples/flipkart.png', alt='flipkart')
+
+:coffeescript
+  $("body").backTotop(
+    isWindow: true
+    cssClass: "blue"
+  )
+

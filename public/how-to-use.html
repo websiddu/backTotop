@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="description" content="A jquery plugin that adds scroll to top button">
+    <meta name="author" content="Siddhartha Gudipati">
+    <title>How to use</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bad+Script">
+    <link rel="stylesheet" href="/css/foundation.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/jquery.backTotop.css">
+    <link rel="stylesheet" href="/css/prettify.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css"><!--[if IE 7]>
+    <link rel="stylesheet" href="/css/font-awesome-ie7.min.css"><![endif]-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/prettify.js"></script>
+    <script src="/js/jquery.backTotop.js"></script>
+  </head>
+  <body onload="prettyPrint()">
+<div class="row container">
+  <div class="row header">
+    <div class="six columns">
+      <h2 class="logo"><a href="index.html"><i class="icon-arrow-up icon-1x"></i>backTotop!</a></h2>
+      <p>A jquery plugin that adds scroll to top button</p>
+    </div>
+    <div class="six columns">
+    </div>
+    <ul class="menu">
+      <li><a href="/index.html" class="">Home</a></li>
+      <li><a href="/how-to-use.html" class="current">How to use</a></li>
+      <li><a href="/examples.html" class="">Examples</a></li>
+      <div class="tools"><a target="_blank" href="https://github.com/websiddu/backTotop" class="radius button"><i class="icon-download icon-2x"></i>Download</a><a target="_blank" href="https://github.com/websiddu/backTotop" class="radius button"><i class="icon-github icon-2x"></i>Fork it</a><span class="seperator"></span><a href="http://twitter.com/websiddu"><i class="icon-twitter icon-1x"></i>@websiddu</a></div>
+    </ul>
+    <hr/>
+  </div>
+  <div class="row main">
+    <div class="twelve columns">
+      <h4 class="subheading"><span> 1.</span>Plug it to your appliction</h4>
+      <p>The first thing you need to do is download the jquery.backTotop.min.js and jquery.backTotop.css, place it your project.<br/>You can use the below lines to import the files into your application by placing those two line in head tag or place it where it best suits in your app.</p>
+      <pre class="prettyprint">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/jquery.ScrollTotop.css&quot;&gt;
+&lt;script src=&quot;js/jquery.backTotop.js&quot;&gt;&lt;/script&gt;
+</pre>
+      <h4 class="subheading"><span> 2.</span>Start the plugin</h4>
+      <p>After successful pluging in, we need to init the plugin as below</p>
+      <pre class="prettyprint">&lt;script&gt;
+  (function(){
+    $(&quot;body&quot;).backTotop({
+     isWindow: true // If you want btt for window
+    });
+  });
+&lt;/script&gt;
+</pre>
+      <h4 class="subheading"><span> 3.</span>Options that you can play with</h4>
+      <p>Here are the setting that you can input to the plugin, these are the default settings.</p>
+      <pre class="prettyprint">{
+  buttonShowanimation: 'fade', // animation type fade/show/slide
+  buttonShowanimationTime: 'medium', // can be fast/slow/medium or any number in milli seconds
+  scrollBottomOffset: 100, // display the scroll to top button when user scroll this many pixels
+  text: &quot;Back to top ↑&quot;, // the text inside the back to top!!
+  backTotopLink: $(&quot;&lt;a            &lt;/a            &quot;, {
+    &quot;class&quot;: &quot;back-to-top&quot;,
+    &quot;id&quot;: &quot;back-top&quot;,
+    &quot;href&quot;: &quot;javascript:void(null)&quot;
+  }), // a dom object that acts a button
+  scrollTopOffset: 0, // scroll to top until this many px from top
+  cssClass: &quot;&quot;, // theme your back to top button
+  scrollTime: &quot;fast&quot;, // can be fast / slow / medium or any number in Milli seconds
+  isWindow: false, // make it true if you want for window
+  focusOuthide: true, //hides the button when mouse-out of the element (works only if isWindow: false)
+  focusOuthideHideTime: 1000, // slow, fast or medium or any number of Milli seconds
+  focusOuthideShowTime: 'medium', // slow, fast or medium or any number of Milli seconds
+  buttonPos: {
+    top: &quot;&quot;,
+    left: &quot;&quot;,
+    right: 10,
+    bottom: 10,
+  } // be intelligent mark only two
+}</pre>
+    </div>
+  </div>
+</div><script type="text/javascript">
+(function() {
+
+  $("body").backTotop({
+    isWindow: true,
+    cssClass: "blue"
+  });
+
+}).call(this);
+</script>
+  </body><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
+socket.onmessage = function(msg) { msg.data == 'reload' && window.location.reload() }</script>
+</html>
