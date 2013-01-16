@@ -20,7 +20,6 @@ exports.layouts =
 
 exports.locals =
   title: 'Welcome to backTotop!'
-  current_class: "class=\'current\'"
 
 # If true, shows the compile process and page/asset status in the
 # terminal when watching and compiling files.
