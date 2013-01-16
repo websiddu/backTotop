@@ -16,13 +16,7 @@ You can use the below lines to import the files into your application by placing
 
 After successful pluging in, we need to init the plugin as below
 
-	  <script>
-	    (function(){
-	      $("body").backTotop({
-	       isWindow: true // If you want backTotop for Window
-	      });
-	    });
-	  </script>
+
 
 #### Options that you can play with
 
