@@ -10,7 +10,7 @@
       ul.menu
       each ptitle, url in links
         li
-          a(href="/#{url}.html", class=(title === ptitle) ?  'current' : "") #{ptitle}
+          a(href="#{url}.html", class=(title === ptitle) ?  'current' : "") #{ptitle}
       .tools
         a.radius.button(target='_blank', href='https://github.com/websiddu/backTotop')
           i.icon-download.icon-2x
