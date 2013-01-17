@@ -18,7 +18,28 @@
     <script src="js/jquery.backTotop.js"></script>
   </head>
   <body onload="prettyPrint()">
-<div class="row container">
+<style type="text/css">
+  body{
+    background: url("../img/noise.png") repeat scroll 0 0  #F1EEE0;
+    }
+    a{
+    color: #8F0206;
+    }
+    a:hover{
+    color: #444;
+    }
+    a:focus{
+    color: #8F0206;
+    }
+    .menu li a.current{
+    border-top: solid 2px #8F0206;
+    }
+    .menu li a:hover{
+    border-top: solid 2px #8F0206;
+    }
+    
+</style>
+<div class="row">
   <header class="row">
     <div class="six columns">
       <h2 class="logo"><a href="index.html"><i class="icon-arrow-up icon-1x"></i>backTotop!</a></h2>
@@ -34,32 +55,80 @@
     </nav>
     <hr/>
   </header>
-  <div class="row main">
-    <div class="twelve columns">
-      <ul class="examples six columns">
-        <li><a href="web-designers-wall.html"><span>Web designers wall</span><img src="./img/examples/wdw.png" alt="Web designers wall"/></a></li>
-      </ul>
-      <ul class="examples six columns">
-        <li><a href="flipkart.html"><span>Flipkart</span><img src="./img/examples/flipkart.png" alt="flipkart"/></a></li>
-      </ul>
+  <div class="row">
+    <div style="padding: 0 50px; text-align: center;" class="twelve columns">
+      <p><strong> Ha!</strong>An example backTotop similar to webdesignerswall.com</p>
+      <p>↓</p>
+      <p>↓</p>
+      <div class="content-block">
+        <h3 class="subheading">Java Script</h3>
+        <pre class="prettyprint">&lt;script&gt;
+  (function(){
+    $(&quot;body&quot;).backTotop({
+      isWindow: true,
+      text: &quot;BACK TO TOP &lt;i class='icon-circle-arrow-up icon-2x'&gt;&lt;/i&gt;&quot;,
+      cssClass:&quot;web-designer-wall&quot;,
+      buttonPos:{
+        left: 20,
+        bottom: 20
+      }
+    });
+  })();
+&lt;/script&gt;
+</pre>
+      </div>
+      <p>↓</p>
+      <p>↓</p>
+      <div class="content-block">
+        <h3 class="subheading">CSS</h3>
+        <pre class="prettyprint">.web-designer-wall{
+  font-family: Ubuntu, &quot;Dejavu Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+}
+.web-designer-wall i{
+  vertical-align: middle;
+}
+.web-designer-wall:hover{
+  color: #333;
+}
+</pre>
+      </div>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>Scroll down!!</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p>↓</p>
+      <p><strong>Stop Scrolling buddy!!</strong></p>
+      <p>Even if you scroll more!! the result will be the same!!</p>
+      <p>Now go click on back to top!!</p>
     </div>
   </div>
-  <footer class="row">
-    <hr/>
-    <div class="twelve columns">
-      <p>Icons by <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a>  |
-        Development with <a href="http://roots.cx" target="_blank">Roots </a>  |
-        CSS Framework<a href="http://foundation.zurb.com/" target="_blank">Foundation</a>  |
-        Built on <a href="http://www.sublimetext.com/2" target="_blank">Sublime Text 2</a>
-      </p>
-    </div>
-  </footer>
 </div><script type="text/javascript">
 (function() {
 
   $("body").backTotop({
     isWindow: true,
-    cssClass: "blue"
+    text: "BACK TO TOP <i class='icon-circle-arrow-up icon-2x'></i>",
+    cssClass: "web-designer-wall",
+    buttonPos: {
+      left: 20,
+      bottom: 20
+    }
   });
 
 }).call(this);
