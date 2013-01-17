@@ -25,7 +25,7 @@ style(type='text/css')
       .twelve.columns(style='padding: 0 50px; text-align: center;')
           p
             strong  Ha!
-            | An example backTotop similar to webdesignerswall.com
+            | An example backTotop similar to flipkart.com
           p ↓
           p ↓
           .content-block
@@ -35,11 +35,11 @@ style(type='text/css')
                 (function(){
                   $("body").backTotop({
                     isWindow: true,
-                    text: "BACK TO TOP <i class='icon-circle-arrow-up icon-2x'></i>",
-                    cssClass:"web-designer-wall",
+                    text: "TOP <i class='icon-angle-up icon-1x'></i>",
+                    cssClass:"flipkart",
                     buttonPos:{
-                      left: 20,
-                      bottom: 20
+                      bottom: 50,
+                      right: 0
                     }
                   });
                 })();
@@ -50,14 +50,20 @@ style(type='text/css')
           .content-block
             h3.subheading CSS
             pre.prettyprint.
-              .web-designer-wall{
-                font-family: Ubuntu, "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+              /* flipkart */
+              .flipkart{
+                font-family: Ubuntu, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+                background:  #B9B8B9;
+                border-radius: 5px 0 0 5px;
+                border: solid 1px #d2d2d2;
+                border-right: 0;
+                color: #fff;
+                padding:10px;
               }
-              .web-designer-wall i{
-                vertical-align: middle;
-              }
-              .web-designer-wall:hover{
-                color: #333;
+              .flipkart:hover{
+                color: #efefef;
+                border: solid 1px #d2d2d2;
+                border-right: 0;
               }
 
           p ↓
@@ -90,9 +96,9 @@ style(type='text/css')
 :coffeescript
   $("body").backTotop(
     isWindow: true
-    text: "BACK TO TOP <i class='icon-circle-arrow-up icon-2x'></i>"
-    cssClass:"web-designer-wall"
+    text: "TOP <i class='icon-angle-up icon-1x'></i>"
+    cssClass:"flipkart"
     buttonPos:
-      left: 20
-      bottom: 20
+      bottom: 50
+      right: 0
   )

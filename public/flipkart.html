@@ -60,7 +60,7 @@
   <!-- Header ends here-->
   <div class="row">
     <div style="padding: 0 50px; text-align: center;" class="twelve columns">
-      <p><strong> Ha!</strong>An example backTotop similar to webdesignerswall.com</p>
+      <p><strong> Ha!</strong>An example backTotop similar to flipkart.com</p>
       <p>↓</p>
       <p>↓</p>
       <div class="content-block">
@@ -69,11 +69,11 @@
   (function(){
     $(&quot;body&quot;).backTotop({
       isWindow: true,
-      text: &quot;BACK TO TOP &lt;i class='icon-circle-arrow-up icon-2x'&gt;&lt;/i&gt;&quot;,
-      cssClass:&quot;web-designer-wall&quot;,
+      text: &quot;TOP &lt;i class='icon-angle-up icon-1x'&gt;&lt;/i&gt;&quot;,
+      cssClass:&quot;flipkart&quot;,
       buttonPos:{
-        left: 20,
-        bottom: 20
+        bottom: 50,
+        right: 0
       }
     });
   })();
@@ -84,14 +84,20 @@
       <p>↓</p>
       <div class="content-block">
         <h3 class="subheading">CSS</h3>
-        <pre class="prettyprint">.web-designer-wall{
-  font-family: Ubuntu, &quot;Dejavu Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+        <pre class="prettyprint">/* flipkart */
+.flipkart{
+  font-family: Ubuntu, &quot;Segoe UI&quot;, Frutiger, &quot;Frutiger Linotype&quot;, &quot;Dejavu Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+  background:  #B9B8B9;
+  border-radius: 5px 0 0 5px;
+  border: solid 1px #d2d2d2;
+  border-right: 0;
+  color: #fff;
+  padding:10px;
 }
-.web-designer-wall i{
-  vertical-align: middle;
-}
-.web-designer-wall:hover{
-  color: #333;
+.flipkart:hover{
+  color: #efefef;
+  border: solid 1px #d2d2d2;
+  border-right: 0;
 }
 </pre>
       </div>
@@ -138,11 +144,11 @@
 
   $("body").backTotop({
     isWindow: true,
-    text: "BACK TO TOP <i class='icon-circle-arrow-up icon-2x'></i>",
-    cssClass: "web-designer-wall",
+    text: "TOP <i class='icon-angle-up icon-1x'></i>",
+    cssClass: "flipkart",
     buttonPos: {
-      left: 20,
-      bottom: 20
+      bottom: 50,
+      right: 0
     }
   });
 

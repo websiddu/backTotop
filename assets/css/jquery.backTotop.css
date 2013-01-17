@@ -16,11 +16,24 @@
 
 
 
+/*
+  These styles are for the site demonstration purpose
+  you can delete the unwanted styles from here
+*/
+
 .pink{
    background: #DA4882;
-   box-shadow: 0 0 10px #8E004B;
+   box-shadow: 0 0 5px #8E004B;
    border: 0;
    color: #fff;
+   border-radius: 5px;
+   transition: all 0.3s;
+   -webkit-transition: all 0.3s;
+}
+.pink:hover{
+  border: 0;
+  color: #efefef;
+   box-shadow: 0 0 10px #8E004B;
 }
 
 .blue{
@@ -39,26 +52,43 @@
   background: #2BA6CB;
   color: #fff;
 }
+.blue:hover{
+  border: solid 1px #ddd;
+  color: #ccc;
+}
+
+/*
+ * Custom styles for showing examples, you can
+ * replace this with you own styles
+*/
 
 
 /* Web designers wall */
-
 .web-designer-wall{
   font-family: Ubuntu, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  border: 0;
+  background: none;
 }
 .web-designer-wall i{
   vertical-align: middle;
 }
 .web-designer-wall:hover{
   color: #333;
+  border: none;
 }
 
 /* flipkart */
 .flipkart{
-  background: #efefef;
-  border-radius: 10px 0 0 10px;
-  border:solid 1px #d2d2d2;
+  font-family: Ubuntu, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  background:  #B9B8B9;
+  border-radius: 5px 0 0 5px;
+  border: solid 1px #d2d2d2;
+  border-right: 0;
+  color: #fff;
+  padding:10px;
 }
 .flipkart:hover{
-  color: #333;
+  color: #efefef;
+  border: solid 1px #d2d2d2;
+  border-right: 0;
 }
