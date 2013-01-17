@@ -1,3 +1,19 @@
+/*!
+ * jQuery backTotop plugin v1.0
+ *
+ * Date: Sat Oct 13 17:17:47 2012 EDT
+ * Requires: jQuery v1.3+
+ *
+ * Copyright 2013, Siddhartha Gudipati
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ *
+ *
+ * Examples can be found at http://websiddu.github.com/backTotop/examples.html
+ *
+*/
+
 ;(function ($, window, document, undefined) {
 
   var BackToTop = function(elem, options) {
@@ -13,6 +29,7 @@
     {
       buttonShowanimation: 'fade', // animation type fade/show/slide
       buttonShowanimationTime: 'medium',// can be fast/slow/medium or any number in milli seconds
+      easing: "swing", // easing effect if jquery ui or any easing plugin is included
       scrollBottomOffset: 100, // display the scroll to top button when user scroll this many pixels
       text: "Back to top &uarr;", // the text inside the back to top!!
       backTotopLink : $("<a></a>", {
@@ -22,7 +39,7 @@
       }),
       scrollTopOffset: 0, // scroll to top until this many px from top
       cssClass: "", // theme your back to top button
-      scrollTime: "fast", // can be fast/slow/medium or any number in milli seconds
+      scrollTime: 'medium', // can be fast/slow/medium or any number in milli seconds
       isWindow: false,
       focusOuthide: true,
       focusOuthideHideTime : 1000,
@@ -38,9 +55,7 @@
   init: function() {
       this.config = $.extend({}, this.defaults, this.options);
       var thiz = this;
-      var cssOpts = {
-
-      };
+      var cssOpts = {};
       if (this.config.backTotopLink.length > 0)
          this.config.backTotopLink = this.config.backTotopLink.clone();
 
@@ -139,13 +154,14 @@
     },
   returnTop:function(){
       // scroll body to 0px on click
-      var thiz = this;
-
-      var scrollUnit = this.config.isWindow ? $("body,html") : this.$elem;
+      var thiz = this,
+        scrollUnit = this.config.isWindow ? $("body,html") : this.$elem;
 
       scrollUnit.animate({
           scrollTop: thiz.config.scrollTopOffset + "px"
-      }, this.config.scrollTime);
+      }, this.config.scrollTime, this.config.easing ,function(){
+
+      });
     },
     handleScroll: function() {
 
