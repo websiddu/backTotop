@@ -36,9 +36,10 @@ title = "How to use"
           {
             buttonShowanimation: 'fade', // animation type fade/show/slide
             buttonShowanimationTime: 'medium', // can be fast/slow/medium or any number in milli seconds
+            easing: "swing", // easing effect if jquery ui or any easing plugin is included
             scrollBottomOffset: 100, // display the scroll to top button when user scroll this many pixels
             text: "Back to top ↑", // the text inside the back to top!!
-            backTotopLink: $("<a            </a            ", {
+            backTotopLink: $("<a></a>", {
               "class": "back-to-top",
               "id": "back-top",
               "href": "javascript:void(null)"

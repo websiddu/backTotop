@@ -5,9 +5,13 @@
   z-index: 999;
   padding: 10px 20px;
   color: #888;
+  background: #efefef;
+  border:solid 1px #d2d2d2;
+  border-radius: 2px;
 }
 .back-to-top:hover,.back-to-top:focus{
   color: #000;
+  border:solid 1px #aaa;
 }
 
 

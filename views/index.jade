@@ -190,6 +190,9 @@ title = "Home"
       p Even if you scroll more!! the result will be the same!!
       p Now go click on back to top!!
   include _foot
+
+// This is what you are looking for, lol i know that ;)
+
 :coffeescript
   $(".pink-cont").backTotop(
     text: "↑"
@@ -199,4 +202,6 @@ title = "Home"
   $("body").backTotop(
     isWindow: true
     cssClass: "blue"
+    easing: 'easeOutElastic'
+    scrollTime: 1000
   )

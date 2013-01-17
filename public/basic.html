@@ -21,24 +21,24 @@
   <body onload="prettyPrint()">
 <style type="text/css">
   body{
-   background: url("../img/noise.png") repeat scroll 0 0 #FFFBE0;
-  }
-  a{
-    color: #D28440;
-  }
-  a:hover{
-    color: #444;
-  }
-  a:focus{
-    color:  #D28440;
-  }
-  .menu li a.current{
-    border-top: solid 2px  #D28440;
-  }
-  .menu li a:hover{
-      border-top: solid 2px  #D28440;
-  }
-  
+    background: url("../img/noise.png") repeat scroll 0 0  #fff;
+    }
+    a{
+    color: #666;
+    }
+    a:hover{
+    color: #000;
+    }
+    a:focus{
+    color: #8F0206;
+    }
+    .menu li a.current{
+    border-top: solid 2px #666;
+    }
+    .menu li a:hover{
+    border-top: solid 2px #666;
+    }
+    
 </style>
 <div class="row">
   <!-- Header starts-->
@@ -60,7 +60,7 @@
   <!-- Header ends here-->
   <div class="row">
     <div style="padding: 0 50px; text-align: center;" class="twelve columns">
-      <p><strong> Ha!</strong>An example backTotop similar to webdesignerswall.com</p>
+      <p><strong> Ha!</strong>An example pretty basic without any configurations</p>
       <p>↓</p>
       <p>↓</p>
       <div class="content-block">
@@ -68,13 +68,7 @@
         <pre class="prettyprint">&lt;script&gt;
   (function(){
     $(&quot;body&quot;).backTotop({
-      isWindow: true,
-      text: &quot;BACK TO TOP &lt;i class='icon-circle-arrow-up icon-2x'&gt;&lt;/i&gt;&quot;,
-      cssClass:&quot;web-designer-wall&quot;,
-      buttonPos:{
-        left: 20,
-        bottom: 20
-      }
+      isWindow: true
     });
   })();
 &lt;/script&gt;
@@ -84,16 +78,21 @@
       <p>↓</p>
       <div class="content-block">
         <h3 class="subheading">CSS</h3>
-        <pre class="prettyprint">.web-designer-wall{
-  font-family: Ubuntu, &quot;Dejavu Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+        <pre class="prettyprint">.back-to-top {
+  position: relative;
+  font-size: 13px;
+  display: inline-block;
+  z-index: 999;
+  padding: 10px 20px;
+  color: #888;
+  background: #efefef;
+  border:solid 1px #d2d2d2;
+  border-radius: 2px;
 }
-.web-designer-wall i{
-  vertical-align: middle;
-}
-.web-designer-wall:hover{
-  color: #333;
-}
-</pre>
+.back-to-top:hover,.back-to-top:focus{
+  color: #000;
+  border:solid 1px #aaa;
+}</pre>
       </div>
       <p>↓</p>
       <p>↓</p>
@@ -137,13 +136,7 @@
 (function() {
 
   $("body").backTotop({
-    isWindow: true,
-    text: "BACK TO TOP <i class='icon-circle-arrow-up icon-2x'></i>",
-    cssClass: "web-designer-wall",
-    buttonPos: {
-      left: 20,
-      bottom: 20
-    }
+    isWindow: true
   });
 
 }).call(this);

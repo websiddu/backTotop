@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
     <script src="js/jquery.min.js"></script>
     <script src="js/prettify.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/jquery.backTotop.js"></script>
   </head>
   <body onload="prettyPrint()">
 <div class="row container">
+  <!-- Header starts-->
   <header class="row">
     <div class="six columns">
       <h2 class="logo"><a href="index.html"><i class="icon-arrow-up icon-1x"></i>backTotop!</a></h2>
@@ -30,10 +32,11 @@
         <li><a href="how-to-use.html" class="current">How to use</a></li>
         <li><a href="examples.html" class="">Examples</a></li>
       </ul>
-      <div class="tools"><a target="_blank" href="https://github.com/websiddu/backTotop" class="radius button secondary"><i class="icon-download icon-2x"></i>Download</a><a target="_blank" href="https://github.com/websiddu/backTotop" class="radius button secondary"><i class="icon-github icon-2x"></i>Fork it</a><span class="seperator"></span><a href="http://twitter.com/websiddu"><i class="icon-twitter icon-1x"></i>@websiddu</a></div>
+      <div class="tools"><a target="_blank" href="https://github.com/websiddu/backTotop/archive/master.zip" class="radius button secondary"><i class="icon-download icon-2x"></i>Download</a><a target="_blank" href="https://github.com/websiddu/backTotop" class="radius button secondary"><i class="icon-github icon-2x"></i>Fork it</a><span class="seperator"></span><a href="http://twitter.com/websiddu"><i class="icon-twitter icon-1x"></i>@websiddu</a></div>
     </nav>
     <hr/>
   </header>
+  <!-- Header ends here-->
   <div class="row main">
     <div class="twelve columns">
       <h4 class="subheading"><span> 1.</span>Plug it to your appliction</h4>
@@ -56,9 +59,10 @@
       <pre class="prettyprint">{
   buttonShowanimation: 'fade', // animation type fade/show/slide
   buttonShowanimationTime: 'medium', // can be fast/slow/medium or any number in milli seconds
+  easing: &quot;swing&quot;, // easing effect if jquery ui or any easing plugin is included
   scrollBottomOffset: 100, // display the scroll to top button when user scroll this many pixels
   text: &quot;Back to top ↑&quot;, // the text inside the back to top!!
-  backTotopLink: $(&quot;&lt;a            &lt;/a            &quot;, {
+  backTotopLink: $(&quot;&lt;a&gt;&lt;/a&gt;&quot;, {
     &quot;class&quot;: &quot;back-to-top&quot;,
     &quot;id&quot;: &quot;back-top&quot;,
     &quot;href&quot;: &quot;javascript:void(null)&quot;
@@ -79,16 +83,18 @@
 }</pre>
     </div>
   </div>
+  <!-- Footer starts here-->
   <footer class="row">
     <hr/>
     <div class="twelve columns">
       <p>Icons by <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a>  |
         Development with <a href="http://roots.cx" target="_blank">Roots </a>  |
-        CSS Framework<a href="http://foundation.zurb.com/" target="_blank">Foundation</a>  |
+        CSS Framework <a href="http://foundation.zurb.com/" target="_blank">Foundation</a>  |
         Built on <a href="http://www.sublimetext.com/2" target="_blank">Sublime Text 2</a>
       </p>
     </div>
   </footer>
+  <!-- Footer ends here-->
 </div><script type="text/javascript">
 (function() {
 
