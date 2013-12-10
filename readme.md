@@ -66,10 +66,5 @@ http://foundation.zurb.com/
 
 #### License
 
-Copyright 2013, Siddhartha Gudipati
-
-Dual licensed under the MIT and GPL licenses:
-
 http://www.opensource.org/licenses/mit-license.php
-
 http://www.gnu.org/licenses/gpl.html
