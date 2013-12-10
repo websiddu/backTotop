@@ -9,7 +9,7 @@ The first thing you need to do is download the jquery.backTotop.min.js and jquer
 
 You can use the below lines to import the files into your application by placing those two line in head tag or place it where it best suits in your app.
 
- 		<link rel="stylesheet" href="css/jquery.ScrollTotop.css"></head>
+ 	<link rel="stylesheet" href="css/jquery.ScrollTotop.css">
   	<script src="js/jquery.backTotop.js"></script>
 
 #### Start the plugin
@@ -55,7 +55,7 @@ Here are the setting that you can input to the plugin, these are the default set
 
 #### FAQ's
 
-##### Icons user from
+##### Icons used from
 
 http://fortawesome.github.com/Font-Awesome/
 
@@ -67,4 +67,5 @@ http://foundation.zurb.com/
 #### License
 
 http://www.opensource.org/licenses/mit-license.php
+
 http://www.gnu.org/licenses/gpl.html
